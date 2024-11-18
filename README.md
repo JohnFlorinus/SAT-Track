@@ -2,9 +2,10 @@ A 3D Real-Time Satellite Tracker that runs in the webbrowser on client-side java
 Works fine on different resolutions and devices.
 
 Its dependent on three different components:
-1: The CelesTrak API - A public API that provides the latest TLE data on many satellites
-2: SatelliteJS - A JavaScript library that performs calculations to propagate the TLE data into real-time coordinates
-3: CesiumJS - A JavaScript library that visualizes a 3D interactable earth with satellite visualization
+* CelesTrak API - A public API that provides the latest TLE data on many satellites
+* SatelliteJS - A JavaScript library that performs calculations to propagate the TLE data into real-time coordinates
+* CesiumJS - A JavaScript library that visualizes a 3D interactable earth with satellite visualization
+
 Most of the heavy lifting is done by these two javascript libraries, this project combines them.
 
 To run the project you cannot just launch the satellitetracker.html due to security constraints regarding CesiumJS.
