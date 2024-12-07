@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Satellite Tracker</title>
+  <!--<link href="assets/img/favicon.png" rel="icon">!-->
+  <link href="assets/css/satellitetracker.css" rel="stylesheet">
+  <link href="assets/Cesium/Widgets/widgets.css" rel="stylesheet">
+</head>
+<body>
+  <div id="settingsPanel">
+    <div class="input-group">
+      <label for="satelliteSelect">Satellite Type:</label>
+        <select id="satelliteSelect">
+            <option value="stations">Space Stations</option>
+            <option value="scientific">Scientific</option>
+            <option value="weathersats">Weather</option>
+            <option value="argos">ARGOS Data Collection System</option>
+            <option value="dmc">Disaster Monitoring</option>
+            <option value="debris">Space Debris</option>
+            <option value="analyst">Unknown Objects</option>
+            <option value="misc">Miscellaneous</option>
+            <option value="global-nav">Global Navigation</option>
+            <option value="us-nav">US Navigation</option>
+            <option value="ru-nav">Russian Navigation</option>
+            <option value="beidou">Chinese Navigation</option>
+            <option value="eu-nav">European Navigation</option>
+            <option value="starlink">Starlink Communications</option>
+            <option value="intelsat">Intelsat Communications</option>
+            <option value="ses">SES Communications</option>
+            <option value="eutelsat">Eutelsat Communications</option>
+            <option value="iridium">Iridium Communications</option>
+            <option value="iridium-NEXT">Iridium NEXT Communications</option>
+            <option value="oneweb">OneWeb Communications</option>
+            <option value="amateur">Amateur Radio Communications</option>
+            <option value="orbcomm">Orbcomm Communications</option>
+            <option value="globalstar">Globalstar Communications</option>
+            <option value="swarm">Swarm Communications</option>
+            <option value="satnogs">satNOGS Communications</option>
+            <option value="gorizont">Gorizont Communications</option>
+            <option value="molniya">Molniya Communications</option>
+            <option value="raduga">Raduga Communications</option>
+            <option value="x-comm">Experimental Communications</option>
+            <option value="other-comm">Other Communications</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="satelliteSelect">Catalog Number:</label>
+        <input type="text" id="satelliteCatalogNumber" placeholder="Optional">
+        <button id="loadSatelliteBtn" onclick="LoadSatellites(document.getElementById('satelliteSelect').value);">Load Satellites</button>
+    </div>
+</div>
+    <div id="cesiumContainer"></div> 
+  <script src="assets/Cesium/Cesium.js"></script>
+  <script src="assets/js/satellite.min.js"></script>
+  <script src="assets/js/satellitetracker.js"></script>
+</body>
+</html>
