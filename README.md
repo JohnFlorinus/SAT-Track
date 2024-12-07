@@ -6,12 +6,16 @@ Its dependent on three different components:
 * SatelliteJS - A JavaScript library that performs calculations to propagate the TLE data into real-time coordinates
 * CesiumJS - A JavaScript library that visualizes a 3D interactable earth with satellite visualization
 
-Most of the heavy lifting is done by these two javascript libraries, this project combines them.
+Most of the heavy lifting is done by these two javascript libraries.
 
-To run the project you cannot just launch the satellitetracker.html due to security constraints regarding CesiumJS.
-To bypass this all you have to do is run a local server, for example via the VS Code Live Server Extension.
+To run the project you have to run index.html on a local server due to security constraints with CesiumJS, for example via the VS Code Live Server Extension.
 
-Right now there are many improvements to be made to this project that I didnt have the interest in doing like:
-* Adding more satellite type options for the user - all API endpoints can be found on the <a href='https://celestrak.org/NORAD/elements/'>CelesTrak API website</a>
-* Utilizing the .addSample() function in CesiumJS to add a much more smooth satellite animation, right now it loops every half second giving a very choppy look
-* Various performance improvements, right now it can get very laggy when loading in a lot of objects at once (like the communications satellite option)
+Right now the project offers:
+<h3>* 29 different satellite types</h3>
+Example: Space Stations, Russian Navigation Satellites, Starlink Satellites, Space Debris
+Some are fetched directly from a CelesTrak API endpoint while some combine different ones
+<h3>* NORAD Catalog Selection</h3>
+Track a singular satellite by inserting its NORAD Catalog number
+<h3>Performant tracking</h3>
+If below 50 concurrent satellite objects the tracking has smooth animation tracking.
+If over 50, like Starlink (thousands) then there is a 1000ms choppy location tracking loop. Otherwise the browser lags and freezes on many computers.
