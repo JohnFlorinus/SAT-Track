@@ -6,8 +6,6 @@ Its dependent on three different components:
 * <h3>SatelliteJS</h3> - A JavaScript library that performs calculations to propagate the TLE data into real-time coordinates
 * <h3>CesiumJS</h3> - A JavaScript library that visualizes a 3D interactable earth with object visualization
 
-Most of the heavy lifting is done by these two javascript libraries.
-
 To run the project you have to run index.html on a local server due to security constraints with CesiumJS, for example via the VS Code Live Server Extension.
 
 <h2><u>Features</u></h2>
