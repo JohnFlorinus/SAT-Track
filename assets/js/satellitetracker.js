@@ -1,5 +1,8 @@
 // https://www.github.com/JohnFlorinus
 
+// inte hemlig nyckel
+Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI3YTUxODQ4Ni02NzA3LTRhOGQtOTUxZi1jOTNlYjdjYWIyMGEiLCJpZCI6Mjg2MTExLCJpYXQiOjE3NDI0ODEwMzJ9.AVdgxzqwjpgSIsZnkD9AwV8SODF_3fNfI8ijgcC8SLk';
+
 // Cesium initiera jorden
   const viewer = new Cesium.Viewer('cesiumContainer', {
     terrain: Cesium.Terrain.fromWorldTerrain(),
