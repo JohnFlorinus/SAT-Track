@@ -1,12 +1,11 @@
-A 3D Real-Time Satellite Tracker that runs in the webbrowser on client-side javascript.
-Works fine on different resolutions and devices.
+<h2>A 3D Real-Time Satellite Tracker. <a href="https://johnflorinus.github.io/SAT-Track/">Click here for live demo</a></h2>
 
-Its dependent on three different components:
+It is based on three different components:
 * <h3>CelesTrak API</h3> - A public API that provides the latest TLE data on many satellites
 * <h3>SatelliteJS</h3> - A JavaScript library that performs calculations to propagate the TLE data into real-time coordinates
 * <h3>CesiumJS</h3> - A JavaScript library that visualizes a 3D interactable earth with object visualization
 
-To run the project you have to run index.html on a local server due to security constraints with CesiumJS, for example via the VS Code Live Server Extension.
+The project needs to be ran on a local server because of CesiumJS, for example via the VS Code Live Server Extension.
 
 <h2><u>Features</u></h2>
 <h3>* 29 different satellite types</h3>
